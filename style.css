@@ -1,0 +1,56 @@
+/* ============ Tech & IA Actu ============ */
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg:#0b1020; --bg2:#111a33; --card:#141d38; --text:#e6ebf7;
+  --muted:#93a0c0; --accent:#7c5cff; --accent2:#00d4ff; --border:#233055;
+}
+body { font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+.container { max-width:960px; margin:0 auto; padding:0 18px; }
+a { color:var(--accent2); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.site-header { background:linear-gradient(135deg,#151e3d,#0e1330); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 18px; flex-wrap:wrap; gap:8px; }
+.logo { font-size:1.15rem; font-weight:700; color:var(--text); display:flex; align-items:center; gap:8px; }
+.logo-icon { font-size:1.4rem; }
+.nav { display:flex; gap:14px; flex-wrap:wrap; }
+.nav a { color:var(--muted); font-size:.92rem; }
+.nav a:hover { color:var(--text); }
+main { padding:28px 0 48px; }
+.hero { background:linear-gradient(135deg,var(--card),#1a2548); border:1px solid var(--border); border-radius:14px; padding:26px 22px; margin-bottom:26px; }
+.hero h1 { font-size:1.7rem; margin-bottom:8px; background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.hero p { color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; transition:transform .15s; display:flex; flex-direction:column; }
+.card:hover { transform:translateY(-3px); }
+.card img { width:100%; height:170px; object-fit:cover; display:block; }
+.card-body { padding:16px; display:flex; flex-direction:column; flex:1; }
+.card-cat { font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--accent2); margin-bottom:6px; }
+.card h2 { font-size:1.05rem; line-height:1.4; margin-bottom:8px; }
+.card h2 a { color:var(--text); }
+.card p { color:var(--muted); font-size:.9rem; }
+.card-meta { margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--muted); }
+.badge { display:inline-block; background:rgba(124,92,255,.18); color:var(--accent2); border:1px solid var(--border); border-radius:20px; padding:3px 12px; font-size:.78rem; }
+.article { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:28px 24px; }
+.article h1 { font-size:1.75rem; line-height:1.35; margin:14px 0 10px; }
+.article .meta { color:var(--muted); font-size:.85rem; margin-bottom:20px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.article img.cover { width:100%; border-radius:10px; margin-bottom:20px; }
+.article h2 { font-size:1.25rem; margin:26px 0 10px; color:var(--accent2); }
+.article p { margin-bottom:14px; }
+.article .source-link { color:var(--muted); font-size:.85rem; margin-top:10px; }
+.article .source-link a { color:var(--accent2); }
+.affiliate-box { background:#182246; border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin:24px 0; }
+.affiliate-box h3 { font-size:1rem; margin-bottom:10px; }
+.affiliate-box ul { list-style:none; }
+.affiliate-box li { margin-bottom:8px; }
+.affiliate-note { font-size:.75rem; color:var(--muted); }
+.back { display:inline-block; margin-bottom:18px; color:var(--muted); font-size:.9rem; }
+.back:hover { color:var(--text); }
+.cat-header { margin-bottom:22px; }
+.cat-header h1 { font-size:1.5rem; }
+.cat-header p { color:var(--muted); }
+.site-footer { border-top:1px solid var(--border); padding:26px 0 40px; text-align:center; }
+.site-footer p { color:var(--muted); font-size:.88rem; margin-bottom:6px; }
+.footer-note { font-size:.75rem !important; }
+.related { margin-top:34px; }
+.related h2 { font-size:1.2rem; margin-bottom:14px; }
+@media(max-width:600px){ .article h1{font-size:1.35rem} .hero h1{font-size:1.4rem} .nav{gap:10px} }

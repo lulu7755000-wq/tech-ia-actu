@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lulu7755000-wq.github.io/tech-ia-actu/sitemap.xml
