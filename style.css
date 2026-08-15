@@ -39,10 +39,11 @@ main { padding:28px 0 48px; }
 .article .source-link { color:var(--muted); font-size:.85rem; margin-top:10px; }
 .article .source-link a { color:var(--accent2); }
 .affiliate-box { background:#182246; border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin:24px 0; }
-.affiliate-box h3 { font-size:1rem; margin-bottom:10px; }
-.affiliate-box ul { list-style:none; }
-.affiliate-box li { margin-bottom:8px; }
-.affiliate-note { font-size:.75rem; color:var(--muted); }
+.affiliate-box h3 { font-size:1rem; margin-bottom:12px; }
+.affiliate-btn { margin:0 0 10px; }
+.affiliate-btn a { display:block; text-align:center; background:linear-gradient(135deg,#f90,#f50); color:#fff; font-weight:700; padding:12px 14px; border-radius:8px; text-decoration:none; }
+.affiliate-btn a:hover { filter:brightness(1.08); }
+.affiliate-note { font-size:.75rem; color:var(--muted); margin:8px 0 0; }
 .back { display:inline-block; margin-bottom:18px; color:var(--muted); font-size:.9rem; }
 .back:hover { color:var(--text); }
 .cat-header { margin-bottom:22px; }
