@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter — Tech & IA Actu</title>
+<meta name="description" content="Inscrivez-vous à la newsletter Tech & IA Actu : recevez chaque semaine les meilleures actualités tech et IA en français.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lulu7755000-wq.github.io/tech-ia-actu/newsletter.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e1a;color:#e0e0e0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.container{max-width:600px;width:100%;text-align:center}
+.logo{font-size:3rem;margin-bottom:10px}
+h1{font-size:2rem;font-weight:800;margin-bottom:10px;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#94a3b8;font-size:1.1rem;margin-bottom:30px;line-height:1.6}
+.form-box{background:#111827;border:1px solid #1e293b;border-radius:16px;padding:30px;margin-bottom:30px}
+.form-box h2{font-size:1.3rem;margin-bottom:20px;color:#60a5fa}
+.input-group{display:flex;gap:10px;margin-bottom:15px}
+.input-group input{flex:1;padding:14px 18px;border-radius:10px;border:1px solid #1e293b;background:#0a0e1a;color:#fff;font-size:1rem;outline:none;transition:border-color .2s}
+.input-group input:focus{border-color:#60a5fa}
+.input-group input::placeholder{color:#64748b}
+.btn{padding:14px 28px;border-radius:10px;border:none;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .2s,filter .2s;width:100%}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.success{display:none;background:#065f46;border:1px solid #10b981;border-radius:10px;padding:20px;margin-top:15px;color:#a7f3d0}
+.success.show{display:block}
+.error{display:none;background:#7f1d1d;border:1px solid #ef4444;border-radius:10px;padding:15px;margin-top:15px;color:#fca5a5}
+.error.show{display:block}
+.features{text-align:left;margin-bottom:30px}
+.features h3{color:#60a5fa;font-size:1.1rem;margin-bottom:15px}
+.feature-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;color:#cbd5e1}
+.feature-item .icon{font-size:1.3rem;flex-shrink:0}
+.feature-item .text{line-height:1.5}
+.feature-item .text strong{color:#fff}
+.footer{text-align:center;color:#64748b;font-size:.85rem;padding-top:20px;border-top:1px solid #1e293b}
+.footer a{color:#60a5fa;text-decoration:none}
+.no-spam{font-size:.8rem;color:#64748b;margin-top:15px}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">🤖</div>
+    <h1>Tech & IA Actu</h1>
+    <p class="subtitle">Recevez chaque semaine les meilleures actualités tech et intelligence artificielle en français — directement dans votre boîte mail.</p>
+
+    <div class="form-box">
+        <h2>📬 Inscrivez-vous gratuitement</h2>
+        <form id="newsletter-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Votre prénom" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Votre email" required>
+            </div>
+            <button type="submit" class="btn" id="submit-btn">Je m'inscris →</button>
+        </form>
+        <div class="success" id="success-msg">
+            ✅ <strong>Bienvenue !</strong> Vous recevrez prochainement nos meilleurs articles tech.
+        </div>
+        <div class="error" id="error-msg">
+            ❌ Une erreur s'est produite. Réessayez ou contactez-nous sur X @AstroFranceFR.
+        </div>
+        <p class="no-spam">🔒 Pas de spam. Désinscription en 1 clic.</p>
+    </div>
+
+    <div class="features">
+        <h3> Ce que vous recevrez :</h3>
+        <div class="feature-item">
+            <span class="icon">🤖</span>
+            <span class="text"><strong>IA & GAFAM</strong> — Les avancées de ChatGPT, Gemini, Mistral et les géants du web</span>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🔒</span>
+            <span class="text"><strong>Cybersécurité</strong> — Alertes et conseils pour protéger vos données</span>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🚀</span>
+            <span class="text"><strong>Startups & French Tech</strong> — Les pépites françaises à surveiller</span>
+        </div>
+        <div class="feature-item">
+            <span class="icon">📱</span>
+            <span class="text"><strong>Hardware</strong> — Tests et avis sur les derniers gadgets</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Tech & IA Actu — <a href="index.html">Retour au site</a></p>
+    </div>
+</div>
+
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!name || !email) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Inscription en cours...';
+
+    try {
+        // Stocke localement (pour GitHub Pages sans backend)
+        const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
+        const exists = subscribers.find(s => s.email === email);
+        if (exists) {
+            document.getElementById('error-msg').textContent = '⚠️ Cet email est déjà inscrit !';
+            document.getElementById('error-msg').classList.add('show');
+            btn.disabled = false;
+            btn.textContent = 'Je m\'inscris →';
+            return;
+        }
+        subscribers.push({ name, email, date: new Date().toISOString() });
+        localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
+
+        document.getElementById('success-msg').classList.add('show');
+        document.getElementById('newsletter-form').style.display = 'none';
+    } catch(err) {
+        document.getElementById('error-msg').classList.add('show');
+        btn.disabled = false;
+        btn.textContent = 'Je m\'inscris →';
+    }
+});
+</script>
+</body>
+</html>
